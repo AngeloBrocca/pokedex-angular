@@ -1,0 +1,100 @@
+:host {
+    main {
+      margin-top: 40px;
+  
+      .pokemon__names {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        height: 75px;
+        padding: 0 30px;
+      }
+  
+      .pokemon__names h1 {
+        color: var(--branco);
+        font-size: 32px;
+        text-transform: capitalize;
+      }
+  
+      .pokemon__names h2 {
+        position: absolute;
+        font-weight: 100;
+        top: 0;
+        font-size: 60px;
+        color: rgba(255, 255, 255, 0.1);
+      }
+  
+      .pokemon__names h1,
+      .pokemon__names h2 {
+        -webkit-animation-fill-mode: none !important;
+        animation-fill-mode: none !important;
+      }
+  
+      .pokemon__status {
+        position: relative;
+      }
+  
+      .pokemon__status img {
+        position: absolute;
+        top: -90px;
+        left: 30px;
+        max-width: 130px;
+        z-index: 10;
+        -webkit-animation-fill-mode: none !important;
+        animation-fill-mode: none !important;
+      }
+  
+      .pokemon__status__statistics {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: var(--branco);
+        min-height: 43.9vh;
+        margin-top: 10px;
+        padding: 110px 35px 30px;
+        border-radius: 50px 50px 0 0;
+      }
+  
+      .pokemon__status__statistics h3 {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 32px;
+        text-decoration: underline;
+        color: var(--secondary-color);
+      }
+  
+      .pokemon__status__statistics ol li {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        line-height: 130%;
+      }
+  
+      @media (max-width: 420px) {
+        margin-top: 10px;
+  
+        .pokemon__names h1 {
+          font-size: 20px;
+        }
+  
+        .pokemon__names h2 {
+          top: 35px;
+          font-size: 20px;
+        }
+  
+        .pokemon__status img {
+          top: -80px;
+          left: 0;
+          max-width: 100px;
+        }
+  
+        .pokemon__status__statistics {
+          min-height: 57vh;
+          padding-top: 50px;
+        }
+      }
+    }
+  }
+  
